@@ -16,6 +16,7 @@ public class EmployeeExceptionHandler {
         ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND,
                 exception.getMessage());
         problemDetail.setProperty("EmployeeId", exception.getEmployeeId());
+        problemDetail.setProperty("bar", "foo");
         problemDetail.setType(URI.create("https://confluence"));
         return problemDetail;
     }

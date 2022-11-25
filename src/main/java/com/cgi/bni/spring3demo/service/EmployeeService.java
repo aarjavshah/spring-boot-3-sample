@@ -17,7 +17,7 @@ public class EmployeeService {
     }
 
     public Employee getEmployee(Long employeeId) {
-        return employeeRepository.findById(employeeId).orElseThrow(EmployeeNotFoundException::new);
+        return employeeRepository.findById(employeeId).orElseThrow(() -> new EmployeeNotFoundException(employeeId, "No employee found"));
     }
 
 }

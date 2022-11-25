@@ -117,6 +117,14 @@
         </repository>
         <repository>
             <id>spring-release</id>
+            <name>Spring Releases</name>
+            <url>https://repo.spring.io/release</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-release</id>
             <name>Spring release</name>
             <url>https://repo.spring.io/release</url>
         </repository>
